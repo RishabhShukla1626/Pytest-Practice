@@ -12,6 +12,6 @@ class Companies(models.Model):
                     default=CompanyStatusChoices.HIRING, max_length=30)
     last_updated = models.DateTimeField(default=timezone.now, editable=True)
     application_notes = models.URLField(blank=True, max_length=100)
-
+    objects = models.manager
     def __str__(self):
         return str(self.name)

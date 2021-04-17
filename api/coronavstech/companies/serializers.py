@@ -9,7 +9,5 @@ class CompanySerializer(serializers.ModelSerializer):
             'id',
             'name',
             'status',
-            'application_link',
             'last_updated',
-            'notes',
         ]
