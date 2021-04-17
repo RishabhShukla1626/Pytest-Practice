@@ -14,4 +14,4 @@ class Companies(models.Model):
     application_notes = models.URLField(blank=True, max_length=100)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
