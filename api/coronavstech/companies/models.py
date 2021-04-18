@@ -13,5 +13,7 @@ class Companies(models.Model):
     last_updated = models.DateTimeField(default=timezone.now, editable=True)
     application_notes = models.URLField(blank=True, max_length=100)
     objects = models.manager
+
+    
     def __str__(self):
         return str(self.name)
