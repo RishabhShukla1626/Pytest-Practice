@@ -1,13 +1,9 @@
-from unittest import TestCase
-from django.test import Client
 from django.urls import reverse
-from django.conf import settings
 from companies.models import Companies
 import json
 import pytest
 
 companies_url = reverse("companies-list")
-client = Client()
 
 @pytest.mark.django_db
 def test_when_there_is_one_company(client):
